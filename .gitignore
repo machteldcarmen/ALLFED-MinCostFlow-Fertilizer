@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+.venv/
+venv/
+env/
+
+.ipynb_checkpoints/
+.pytest_cache/
+.coverage
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data: not committed
+data/*.csv
+data/production_*.csv
+data/trade_*.csv
+data/Fertilizers_*.csv
+
+# Generated outputs
+results/*.csv
+results/*.json
+results/*.html
+results/*.png
+!results/.gitkeep

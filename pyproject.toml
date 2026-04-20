@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.2.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "allfed-fertilizer-min-cost-flow"
+version = "0.1.0"
+description = "Min-cost-flow LP model of global fertilizer trade on FAOSTAT data."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Simon Blouin" },
+    { name = "ALLFED" },
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "networkx>=3.0",
+    "matplotlib>=3.7",
+    "plotly>=5.18",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "jupyter",
+    "ipykernel",
+    "nbformat",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
